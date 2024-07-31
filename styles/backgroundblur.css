@@ -1,0 +1,115 @@
+
+/* =======================BACKGROUND-BLUR-WEBSITE-1=========================  */
+ .web1bgblur {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -2;
+    top: -35px;
+}
+
+.web1bgblur img {
+    height: 595px;
+    width: 1260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#web1bg1:checked ~ .web1bgblur[style*="--position: 1"],
+#web1bg2:checked ~ .web1bgblur[style*="--position: 2"],
+#web1bg3:checked ~ .web1bgblur[style*="--position: 3"],
+#web1bg4:checked ~ .web1bgblur[style*="--position: 4"],
+#web1bg5:checked ~ .web1bgblur[style*="--position: 5"],
+#web1bg6:checked ~ .web1bgblur[style*="--position: 6"] {
+    opacity: 1;
+    z-index: -2;
+    filter: blur(10px);
+}
+
+
+
+/* =======================BACKGROUND-BLUR-WEBSITE-2=========================  */
+.web2mainbackground {
+    position: absolute;
+    z-index: -10;
+    top: -32.5px;
+    left: -21px;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.web2mainbackground img{
+    height: 595px;
+    width: 1260px;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(8px);
+    opacity: 0.5;
+}
+
+#web2bg1:checked ~ .web2mainbackground[style*="--position: 1"],
+#web2bg2:checked ~ .web2mainbackground[style*="--position: 2"],
+#web2bg3:checked ~ .web2mainbackground[style*="--position: 3"],
+#web2bg4:checked ~ .web2mainbackground[style*="--position: 4"],
+#web2bg5:checked ~ .web2mainbackground[style*="--position: 5"],
+#web2bg6:checked ~ .web2mainbackground[style*="--position: 6"],
+#web2bg7:checked ~ .web2mainbackground[style*="--position: 7"],
+#web2bg8:checked ~ .web2mainbackground[style*="--position: 8"] {
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+
+
+/* =======================BACKGROUND-BLUR-WEBSITE-3=========================  */
+.web3bg {
+    position: absolute;
+    top: -20px;
+    left: -80px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.web3bg img {
+    height: 595px;
+    width: 1260px;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+    filter: blur(10px);
+}
+
+#web3bg1:checked ~ .web3bg[style*="--position: 1"],
+#web3bg2:checked ~ .web3bg[style*="--position: 2"],
+#web3bg3:checked ~ .web3bg[style*="--position: 3"],
+#web3bg4:checked ~ .web3bg[style*="--position: 4"],
+#web3bg5:checked ~ .web3bg[style*="--position: 5"],
+#web3bg6:checked ~ .web3bg[style*="--position: 6"] {
+    opacity: 1;
+}
+
+
+
+/* =======================BACKGROUND-BLUR-WEBSITE-4=========================  */
+.web4bg {
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.web4bg img {
+    object-fit: cover;
+    height: 595px;
+    width: 1260px;
+    object-position: top;
+    filter: blur(10px);
+}
+
+#web4mainbg1:checked ~ .web4bg:nth-of-type(1),
+#web4mainbg2:checked ~ .web4bg:nth-of-type(2),
+#web4mainbg3:checked ~ .web4bg:nth-of-type(3),
+#web4mainbg4:checked ~ .web4bg:nth-of-type(4) {
+    opacity: 1;
+}

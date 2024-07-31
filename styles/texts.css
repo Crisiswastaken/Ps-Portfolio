@@ -1,0 +1,253 @@
+ 
+/* ========================================WEBSITE-1========================================== */ 
+ 
+ /* =======================TITLE-TEXT-WEBSITE-1=========================  */
+ .web1text {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    top: -60px;
+    left: 38px;
+    text-shadow: 1px 1px 7px white;
+    opacity: 0;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    filter: blur(5px);
+}
+
+#web1bg1:checked ~ .web1text[style*="--position: 1"],
+#web1bg2:checked ~ .web1text[style*="--position: 2"],
+#web1bg3:checked ~ .web1text[style*="--position: 3"],
+#web1bg4:checked ~ .web1text[style*="--position: 4"],
+#web1bg5:checked ~ .web1text[style*="--position: 5"],
+#web1bg6:checked ~ .web1text[style*="--position: 6"] {
+    opacity: 1;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    top: -5px;
+    position: absolute;
+    filter: blur(0px);
+}
+
+ /* =======================DESCRIPTION-TEXT-WEBSITE-1=========================  */
+ .web1desc {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px white;
+    font-style: thin;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 239px;      
+    left: 38px; 
+    width: calc(45px * (var(--character)));
+    opacity: 0;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    filter: blur(5px);
+    z-index: 10;
+}
+
+#web1bg1:checked ~ .web1desc[style*="--position: 1"],
+#web1bg2:checked ~ .web1desc[style*="--position: 2"],
+#web1bg3:checked ~ .web1desc[style*="--position: 3"],
+#web1bg4:checked ~ .web1desc[style*="--position: 4"],
+#web1bg5:checked ~ .web1desc[style*="--position: 5"],
+#web1bg6:checked ~ .web1desc[style*="--position: 6"] {
+    opacity: 1;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: absolute;
+    top: 96px;
+    text-shadow: 1px 1px 4px white;
+    filter: blur(0px);
+}
+
+ /* =======================DISPLAY-TEXT-WEBSITE-1=========================  */
+ .web1display {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 430px; 
+    bottom: 42px; 
+    z-index: -10;
+    transition: opacity 5s;
+}
+
+.web1flex:hover .web1display{
+    opacity: 0;
+    transition: opacity 5s;
+}
+
+
+
+/* ========================================WEBSITE-2========================================== */ 
+
+ /* =======================TITLE-TEXT-WEBSITE-2=========================  */
+
+ .web2text {
+    color: var(--glow);
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    position: absolute;
+    font-size: 60px;
+    margin: 0;
+    text-shadow: 0 0 10px var(--glow),0 0 30px var(--glow), 0 0 50px var(--glow);
+    opacity: 0;
+    top: -15px;
+    left: 360px;
+    width: 120%;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1), filter 1.5s ease-out;
+    z-index: -5;
+    filter: blur(5px);
+}
+
+#web2bg1:checked ~ .web2text[style*="--position: 1"],
+#web2bg2:checked ~ .web2text[style*="--position: 2"],
+#web2bg3:checked ~ .web2text[style*="--position: 3"],
+#web2bg4:checked ~ .web2text[style*="--position: 4"],
+#web2bg5:checked ~ .web2text[style*="--position: 5"],
+#web2bg6:checked ~ .web2text[style*="--position: 6"],
+#web2bg7:checked ~ .web2text[style*="--position: 7"],
+#web2bg8:checked ~ .web2text[style*="--position: 8"] {
+    opacity: 1;
+    left: 462px;
+    filter: blur(0px) drop-shadow(0 0 10px var(--glow));
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1), filter 1.5s ease-out;
+
+}
+
+ /* =======================DESCRIPTION-TEXT-WEBSITE-2=========================  */
+.web2desc {
+    /* Text Design */
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    position: absolute;
+    font-size: 20px;
+    margin: 0;
+    text-shadow: 0 0 5px white;
+    width: var(--descwid);
+    /* Text Animation */
+    opacity: 0;
+    top: 120px;
+    left: 462px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1), filter 1.5s ease-out;
+    filter: blur(5px);
+}
+
+#web2bg1:checked ~ .web2desc[style*="--position: 1"],
+#web2bg2:checked ~ .web2desc[style*="--position: 2"],
+#web2bg3:checked ~ .web2desc[style*="--position: 3"],
+#web2bg4:checked ~ .web2desc[style*="--position: 4"],
+#web2bg5:checked ~ .web2desc[style*="--position: 5"],
+#web2bg6:checked ~ .web2desc[style*="--position: 6"],
+#web2bg7:checked ~ .web2desc[style*="--position: 7"],
+#web2bg8:checked ~ .web2desc[style*="--position: 8"] {
+    opacity: 1;
+    top: 66px;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1), filter 1.5s ease-out;
+    filter: blur(0px) drop-shadow(0 0 5px white);
+    z-index: 10;
+}
+
+#web2bg1:checked ~ .web2desc:hover[style*="--position: 1"],
+#web2bg2:checked ~ .web2desc:hover[style*="--position: 2"],
+#web2bg3:checked ~ .web2desc:hover[style*="--position: 3"],
+#web2bg4:checked ~ .web2desc:hover[style*="--position: 4"],
+#web2bg5:checked ~ .web2desc:hover[style*="--position: 5"],
+#web2bg6:checked ~ .web2desc:hover[style*="--position: 6"],
+#web2bg7:checked ~ .web2desc:hover[style*="--position: 7"],
+#web2bg8:checked ~ .web2desc:hover[style*="--position: 8"] {
+    cursor: pointer;
+    color: var(--glow);
+    filter: blur(0px) drop-shadow(0 0 5px var(--glow));
+    text-shadow: 0 0 5px var(--glow);
+    transition: all 0.5s ease;
+}
+
+
+
+/* ========================================WEBSITE-3========================================== */ 
+
+ /* =======================TITLE-TEXT-WEBSITE-3=========================  */
+.web3text {
+    font-family: "Kanit";
+    font-weight: 100;
+    font-style: thin;
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    top: 40px;
+    left: -30px;
+    opacity: 0;
+    text-shadow: 0px 0px 10px white, 0px 0px 30px rgb(255, 255, 255);
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    filter: blur(5px);
+    z-index: 10;
+}
+
+#web3bg1:checked ~ .web3text[style*="--position: 1"],
+#web3bg2:checked ~ .web3text[style*="--position: 2"],
+#web3bg3:checked ~ .web3text[style*="--position: 3"],
+#web3bg4:checked ~ .web3text[style*="--position: 4"],
+#web3bg5:checked ~ .web3text[style*="--position: 5"],
+#web3bg6:checked ~ .web3text[style*="--position: 6"] {
+    opacity: 1;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    top: 100px;
+    position: absolute;
+    filter: blur(0px);
+}
+
+ /* =======================DESCRIPTION-TEXT-WEBSITE-3=========================  */
+ .web3desc {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    width: calc(30px * (var(--character)));
+    opacity: 0;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    filter: blur(5px);
+    left: -30px;
+    top: 280px;
+    z-index: 10;
+}
+
+#web3bg1:checked ~ .web3desc[style*="--position: 1"],
+#web3bg2:checked ~ .web3desc[style*="--position: 2"],
+#web3bg3:checked ~ .web3desc[style*="--position: 3"],
+#web3bg4:checked ~ .web3desc[style*="--position: 4"],
+#web3bg5:checked ~ .web3desc[style*="--position: 5"],
+#web3bg6:checked ~ .web3desc[style*="--position: 6"] {
+    opacity: 1;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: absolute;
+    top: 190px;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    filter: blur(0px);
+} 
+
+#web3bg1:checked ~ .web3desc:hover[style*="--position: 1"],
+#web3bg2:checked ~ .web3desc:hover[style*="--position: 2"],
+#web3bg3:checked ~ .web3desc:hover[style*="--position: 3"],
+#web3bg4:checked ~ .web3desc:hover[style*="--position: 4"],
+#web3bg5:checked ~ .web3desc:hover[style*="--position: 5"],
+#web3bg6:checked ~ .web3desc:hover[style*="--position: 6"],
+#web3bg1:checked ~ .web3text:hover[style*="--position: 1"],
+#web3bg2:checked ~ .web3text:hover[style*="--position: 2"],
+#web3bg3:checked ~ .web3text:hover[style*="--position: 3"],
+#web3bg4:checked ~ .web3text:hover[style*="--position: 4"],
+#web3bg5:checked ~ .web3text:hover[style*="--position: 5"],
+#web3bg6:checked ~ .web3text:hover[style*="--position: 6"] {
+    text-shadow: 0px 0px 15px white, 0px 0px 40px whitesmoke;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
